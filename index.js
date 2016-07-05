@@ -13,7 +13,7 @@ restService.get('/test', function (req, res) {
                 displayText: "ok",
                 source: 'app'
             });
-}
+});
 
 
 restService.post('/hook', function (req, res) {
