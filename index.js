@@ -7,12 +7,12 @@ const bodyParser = require('body-parser');
 const restService = express();
 restService.use(bodyParser.json());
 
-restService.post('/test', function (req, res) {
-return res.json({
-            status: "success",
-            displayText: "ok",
-            source: 'app'
-        });
+restService.get('/test', function (req, res) {
+    return res.json({
+                status: "success",
+                displayText: "ok",
+                source: 'app'
+            });
 }
 
 
